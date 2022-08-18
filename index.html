@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO FINAL</title>
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- BOOTSTRAP -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+</head>
+<body>
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
+    
+
+
+    <!-- Open HEADER -->
+    <header id="header">
+        <div></div>
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo" id="logo">
+        </a>
+    </header>
+    <!-- End HEADER -->
+
+    <!-- Open NAV BAR -->
+    <nav class="header__menu">
+
+        <!-- <label for="menu" class="header__burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <input type="checkbox" id="menu">
+
+        <label for="menu" class="header__closeMenu">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </label> -->
+
+        <ul>
+            <li><a id="inicio_html" href="index.html">INICIO</a></li>
+            <li><a href="html/propiedades2.html">PROPIEDADES</a></li>
+            <li><a class="vender_a" href="html/vender3.html">VENDER SU PROPIEDAD</a></li>
+            <li><a href="html/nosotros4.html">NOSOTROS</a></li>
+            <li><a href="html/contacto5.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <!-- End NAV BAR -->
+
+    <!-- Open MAIN CONTAINER -->
+        <section class="home_heroImage">
+            <fieldset class="fieldset">
+                <!-- <legend>Buscar Propiedades</legend> -->
+                <form action="/formulario" method="POST">
+                    <div class="radio-buttons">
+                        <input type="radio" name="rentorbuy" id="RENT">
+                        <label for="RENT" id="radio1" class="btn">Alquilar</label>
+                        
+                        <input type="radio" name="rentorbuy" id="BUY">
+                        <label for="BUY" id="radio2" class="btn">Comprar</label>
+                    </div>
+                    
+                    <div class="buttons-container">
+                        <input type="text" placeholder="Ref. Nº" class="btn buttons">
+                        <select name="TipoDePropiedad" id="" class="btn buttons">
+                            <option value="" hidden selected>Tipo de Propiedad</option>
+                            <option value="Departamento">Departamento</option>
+                            <option value="Casa">Casa</option>
+                            <option value="PH">PH / Ático</option>
+                            <option value="Terreno">Terreno</option>
+                            <option value="Comercial">Local Comercial</option>
+                            <option value="Oficina">Oficina</option>
+                            <option value="Garage">Garage</option>
+                            <option value="Galpon">Galpón / Bodega</option>
+                            <option value="Trastero">Depósito / Trastero</option>
+                            <option value="Edificio">Edificio</option>
+                        </select>
+                        <select name="Habitaciones" id="" class="btn buttons">
+                            <option value="" hidden selected>Ambientes</option>
+                            <option value="">1 ambiente o monoambiente</option>
+                            <option value="">2 ambientes</option>
+                            <option value="">3 ambientes</option>
+                            <option value="">4 ambientes</option>
+                            <option value="">5+ ambientes</option>
+                        </select>                
+                        <input type="text" placeholder="Ubicación" class="btn buttons">
+                        <button type="submit" class="btn search-button">Buscar</button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+    <!-- End MAIN CONTAINER -->
+
+
+    <!-- Open PROPIEDADES DESTACADAS -->
+    <h2>Propiedades Destacadas</h2>
+    <section>
+        <section class="propiedades_destacadas">
+            <article class="propiedad_container">
+                <figure class="cuadrados" id="cuadrado1"></figure>
+                <div class="destacadas_textContainer">
+                    <h3>Propiedad 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempore commodi quis voluptate distinctio perferendis eius alias pariatur earum sequi.</p>
+                </div>
+            </article>
+            <article class="propiedad_container">
+                <figure class="cuadrados" id="cuadrado2"></figure>
+                <div class="destacadas_textContainer">
+                    <h3>Propiedad 2</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi culpa quo pariatur inventore nam libero numquam soluta eveniet sapiente ut.</p>
+                </div>
+            </article>
+            <article class="propiedad_container">
+                <figure class="cuadrados" id="cuadrado3"></figure>
+                <div class="destacadas_textContainer">
+                    <h3>Propiedad 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde provident eum doloremque voluptate consectetur totam ex eaque distinctio tempora ab!</p>
+                </div>
+            </article>
+            <article class="propiedad_container">
+                <figure class="cuadrados" id="cuadrado4"></figure>
+                <div class="destacadas_textContainer">
+                    <h3>Propiedad 4</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro deleniti quibusdam illo eligendi deserunt eos vitae itaque! Atque, modi ipsa!</p>
+                </div>
+            </article>
+        </section>
+        <div class="div_buttonContainer">
+            <button class="btn search-button" id="vermas_button"><a href="html/propiedades2.html">Ver más</a></button>
+        </div>
+    </section>
+    <!-- End PROPIEDADES DESTACADAS -->
+
+    <!-- Open COMUNICACIÓN PROMO -->
+    <section class="comunication_container">
+        <h2>¿Queres <a href="html/vender3.html" class="vender">vender</a> tu propiedad?</h2>
+        <p>Un equipo profesional le asesorará en cualquier momento sobre la venta de su propiedad, la empresa inmobiliaria líder en el mercado.</p>
+        <a href="html/contacto5.html" id="hablamos">¿Hablamos?</a>
+    </section>
+    <!-- End COMUNICACIÓN PROMO -->
+
+    <!-- Open CAROUSEL -->
+    <section class="carousel" style="--carousel-bg-color:var(--white-alpha-color);">
+        <input type="radio" name="slides" id="slide-1" checked>
+        <input type="radio" name="slides" id="slide-2">
+        <input type="radio" name="slides" id="slide-3">
+        <input type="radio" name="slides" id="slide-4">
+        <ul class="slides">
+            <li class="slide">
+                <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque expedita delectus quibusdam asperiores alias culpa ullam similique optio porro, corporis a maxime dolorem atque qui, cumque ipsum, minima aliquam pariatur!</blockquote>
+                <h3 class="text-first-color">NOMBRE DEL CLIENTE</h3>
+                <h6>Cliente</h6>
+            </li>
+            <li class="slide">
+                <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque expedita delectus quibusdam asperiores alias culpa ullam similique optio porro, corporis a maxime dolorem atque qui, cumque ipsum, minima aliquam pariatur!</blockquote>
+                <h3 class="text-first-color">NOMBRE DEL CLIENTE</h3>
+                <h6>Cliente</h6>
+            </li>
+            <li class="slide">
+                <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque expedita delectus quibusdam asperiores alias culpa ullam similique optio porro, corporis a maxime dolorem atque qui, cumque ipsum, minima aliquam pariatur!</blockquote>
+                <h3 class="text-first-color">NOMBRE DEL CLIENTE</h3>
+                <h6>Cliente</h6>
+            </li>
+            <li class="slide">
+                <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque expedita delectus quibusdam asperiores alias culpa ullam similique optio porro, corporis a maxime dolorem atque qui, cumque ipsum, minima aliquam pariatur!</blockquote>
+                <h3 class="text-first-color">NOMBRE DEL CLIENTE</h3>
+                <h6>Cliente</h6>
+            </li>
+        </ul>
+        <aside class="slides-nav">
+            <label for="slide-1" id="dot-1"></label>
+            <label for="slide-2" id="dot-2"></label>
+            <label for="slide-3" id="dot-3"></label>
+            <label for="slide-4" id="dot-4"></label>
+        </aside>
+      </section>
+      <!-- End CAROUSEL -->
+
+
+
+<!-- Open FOOTER -->
+<footer class="ftr" id="ftr">
+        
+    <!-- Open ICONO BACK TO TOP -->
+    <a href="#top" class="backtotop_icon">
+        <img src="img/icons/icon_backtotop.png" alt="backtotop_icon">
+    </a>
+    <!-- End ICONO BACK TO TOP -->
+
+    <section class="ftr_section1">
+        <div class="social_container">
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/icons/icon_insta_white.svg" alt="instagram_icon"></a>
+            <a href="https://www.facebook.com/"><img src="img/icons/icon_face_white.svg" alt="facebook_icon"></a>
+            <a href="html/contacto5.html"><img src="img/icons/icon_message_white.png" alt="letter_icon" class="last_icon"></a>
+        </div>
+
+        <div class="bprop_container">
+            <a href="index.html">B Propiedades</a>
+        </div>
+    </section>
+
+    <section class="ftr_section2">
+        <div class="contact_containers" id="div_mail">
+            <a href="mailto:bpropiedades@gmail.com">
+                <img src="img/icons/icon_letter_white.svg" alt="mail_icon">@bpropiedades
+            </a>
+        </div>
+
+        <div class="contact_containers" id="div_phone">
+            <a href="tel:+543794032677">
+                <img src="img/icons/icon_phone_white.png" alt="phone_icon">379 4 032 677
+            </a>
+        </div>
+
+        <div class="contact_containers" id="div_location">
+            <a href="https://www.google.com/maps/place/Hip%C3%B3lito+Yrigoyen+1050,+W3400ASW+Corrientes/@-27.4687414,-58.8375523,17z/data=!3m1!4b1!4m5!3m4!1s0x94456ca37f4c10b3:0x3968228fdc29516a!8m2!3d-27.4687414!4d-58.8375523" target="_blank">
+                <img src="img/icons/icon_location_white.png" alt="location_icon">Ver oficina en Google Maps
+            </a>
+        </div>
+    </section>
+
+    <section class="ftr_section3"  id="copyright">
+        <p class="copyright">Copyright © 2022 Real Estate. Designed by Ana the Martian</p>
+    </section>
+
+</footer>
+<!-- End FOOTER -->
+
+</body>
+</html>
