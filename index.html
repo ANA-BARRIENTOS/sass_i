@@ -35,26 +35,24 @@
     <!-- End HEADER -->
 
     <!-- Open NAV BAR -->
-    <nav class="header__menu">
-
-        <!-- <label for="menu" class="header__burguerMenu">
+    <div class="navegacion">
+        <label for="menu" class="menu__burguerMenu">
             <i class="fa-solid fa-bars"></i>
         </label>
-
         <input type="checkbox" id="menu">
-
-        <label for="menu" class="header__closeMenu">
-            <i class="fa-solid fa-circle-xmark"></i>
-        </label> -->
-
-        <ul>
-            <li><a id="inicio_html" href="index.html">INICIO</a></li>
-            <li><a href="html/propiedades2.html">PROPIEDADES</a></li>
-            <li><a class="vender_a" href="html/vender3.html">VENDER SU PROPIEDAD</a></li>
-            <li><a href="html/nosotros4.html">NOSOTROS</a></li>
-            <li><a href="html/contacto5.html">CONTACTO</a></li>
-        </ul>
-    </nav>
+        <nav class="nav">
+            <ul>
+                <label for="menu" class="menu__closeMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </label>
+                <li><a id="inicio_html" href="index.html">INICIO</a></li>
+                <li><a href="html/propiedades2.html">PROPIEDADES</a></li>
+                <li><a class="vender_a" href="html/vender3.html">VENDER</a></li>
+                <li><a href="html/nosotros4.html">NOSOTROS</a></li>
+                <li><a href="html/contacto5.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
     <!-- End NAV BAR -->
 
     <!-- Open MAIN CONTAINER -->
@@ -70,9 +68,9 @@
                         <label for="BUY" id="radio2" class="btn">Comprar</label>
                     </div>
                     
-                    <div class="buttons-container">
-                        <input type="text" placeholder="Ref. Nº" class="btn buttons">
-                        <select name="TipoDePropiedad" id="" class="btn buttons">
+                    <div class="buttons_container">
+                        <input type="text" placeholder="Ref. Nº" class="btn form_btn1">
+                        <select name="TipoDePropiedad" id="" class="btn form_btn2">
                             <option value="" hidden selected>Tipo de Propiedad</option>
                             <option value="Departamento">Departamento</option>
                             <option value="Casa">Casa</option>
@@ -85,7 +83,7 @@
                             <option value="Trastero">Depósito / Trastero</option>
                             <option value="Edificio">Edificio</option>
                         </select>
-                        <select name="Habitaciones" id="" class="btn buttons">
+                        <select name="Habitaciones" id="" class="btn form_btn3">
                             <option value="" hidden selected>Ambientes</option>
                             <option value="">1 ambiente o monoambiente</option>
                             <option value="">2 ambientes</option>
@@ -93,8 +91,11 @@
                             <option value="">4 ambientes</option>
                             <option value="">5+ ambientes</option>
                         </select>                
-                        <input type="text" placeholder="Ubicación" class="btn buttons">
-                        <button type="submit" class="btn search-button">Buscar</button>
+                        <input type="text" placeholder="Ubicación" class="btn form_btn4">
+                    </div>
+
+                    <div class="div_btn5">
+                        <button type="submit" class="btn search_btn form_btn5">Buscar</button>
                     </div>
                 </form>
             </fieldset>
@@ -103,8 +104,8 @@
 
 
     <!-- Open PROPIEDADES DESTACADAS -->
-    <h2>Propiedades Destacadas</h2>
-    <section>
+    <div class="section2">
+        <h2>Propiedades Destacadas</h2>
         <section class="propiedades_destacadas">
             <article class="propiedad_container">
                 <figure class="cuadrados" id="cuadrado1"></figure>
@@ -136,9 +137,9 @@
             </article>
         </section>
         <div class="div_buttonContainer">
-            <button class="btn search-button" id="vermas_button"><a href="html/propiedades2.html">Ver más</a></button>
+            <button class="btn search_btn" id="vermas_button"><a href="html/propiedades2.html">Ver más</a></button>
         </div>
-    </section>
+    </div>
     <!-- End PROPIEDADES DESTACADAS -->
 
     <!-- Open COMUNICACIÓN PROMO -->
@@ -150,7 +151,7 @@
     <!-- End COMUNICACIÓN PROMO -->
 
     <!-- Open CAROUSEL -->
-    <section class="carousel" style="--carousel-bg-color:var(--white-alpha-color);">
+    <section class="carousel">
         <input type="radio" name="slides" id="slide-1" checked>
         <input type="radio" name="slides" id="slide-2">
         <input type="radio" name="slides" id="slide-3">

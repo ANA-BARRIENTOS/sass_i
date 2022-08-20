@@ -1,0 +1,73 @@
+// Open BACK-TO-TOP Icon
+.backtotop_icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    img {
+        width: 70px;
+        opacity: 50%;
+        transition: opacity 1s;
+        &:hover {
+            opacity: 100%;
+        }
+    }
+}
+// End BACK-TO-TOP Icon
+
+.btn {
+    border-radius: 0.25em;
+    font-size: 16px;
+    padding: 0.8rem;
+    border: none;
+    width: 190px;
+}
+
+.search_btn {
+    background-color: red;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 0px;
+    cursor: pointer;
+    a {
+        color: #fff;
+    }
+}
+
+
+// BUTTONS INDEX ++++++++++
+#radio1, #radio2 {
+    width: 95px;
+    margin: 0px;
+}
+
+.form_btn2, .form_btn3 {
+    background-color: #fff;
+    width: 215.6px;
+}
+
+.form_btn1, .form_btn2, .form_btn3 {
+    margin-right: 10px;
+}
+
+.form_btn5 {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 998px) {
+    .form_btn4 {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .form_btn3 {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .form_btn2 {
+        margin-top: 10px;
+    }
+}

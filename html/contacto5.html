@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B PROPIEDADES</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Vollkorn:wght@700&display=swap" rel="stylesheet">
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
     <!-- Open HEADER -->
@@ -25,15 +27,24 @@
     <!-- End HEADER -->
 
     <!-- Open NAV BAR -->
-    <nav>
-        <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="propiedades2.html">PROPIEDADES</a></li>
-            <li><a href="vender3.html">VENDER SU PROPIEDAD</a></li>
-            <li><a href="nosotros4.html">NOSOTROS</a></li>
-            <li><a id="contacto_html" href="contacto5.html">CONTACTO</a></li>
-        </ul>
-    </nav>
+    <div class="navegacion">
+        <label for="menu" class="menu__burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="nav">
+            <ul>
+                <label for="menu" class="menu__closeMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </label>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="propiedades2.html">PROPIEDADES</a></li>
+                <li><a class="vender_a" href="vender3.html">VENDER</a></li>
+                <li><a href="nosotros4.html">NOSOTROS</a></li>
+                <li><a id="contacto_html" href="contacto5.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
     <!-- End NAV BAR -->
 
     <!-- Open FORMULARIO DE CONTACTO -->
@@ -50,7 +61,7 @@
         
             <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
             
-            <input type="submit" value="Enviar" class="btn search-button">
+            <input type="submit" value="Enviar" class="btn search_btn">
         </form>
     </main>
     <!-- End FORMULARIO DE CONTACTO -->

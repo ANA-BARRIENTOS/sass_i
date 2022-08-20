@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
     <!-- Open HEADER -->
@@ -24,17 +26,26 @@
     </header>
     <!-- End HEADER -->
 
-    <!-- Open NAV BAR -->
-    <nav>
-        <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a id="propiedades_html" href="propiedades2.html">PROPIEDADES</a></li>
-            <li><a href="vender3.html">VENDER SU PROPIEDAD</a></li>
-            <li><a href="nosotros4.html">NOSOTROS</a></li>
-            <li><a href="contacto5.html">CONTACTO</a></li>
-        </ul>
-    </nav>
-    <!-- End NAV BAR -->
+   <!-- Open NAV BAR -->
+   <div class="navegacion">
+        <label for="menu" class="menu__burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="nav">
+            <ul>
+                <label for="menu" class="menu__closeMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </label>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a id="propiedades_html" href="propiedades2.html">PROPIEDADES</a></li>
+                <li><a class="vender_a" href="vender3.html">VENDER</a></li>
+                <li><a href="nosotros4.html">NOSOTROS</a></li>
+                <li><a href="contacto5.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+<!-- End NAV BAR -->
 
     <!-- Open ICONO BACK TO TOP -->
     <a href="#top" class="backtotop_icon">

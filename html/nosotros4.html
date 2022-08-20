@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B PROPIEDADES</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Vollkorn:wght@700&display=swap" rel="stylesheet">
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
     <!-- Open HEADER -->
@@ -25,23 +27,32 @@
     <!-- End HEADER -->
 
     <!-- Open NAV BAR -->
-    <nav>
-        <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="propiedades2.html">PROPIEDADES</a></li>
-            <li><a href="vender3.html">VENDER SU PROPIEDAD</a></li>
-            <li><a id="nosotros_html" href="nosotros4.html">NOSOTROS</a></li>
-            <li><a href="contacto5.html">CONTACTO</a></li>
-        </ul>
-    </nav>
+    <div class="navegacion">
+        <label for="menu" class="menu__burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="nav">
+            <ul>
+                <label for="menu" class="menu__closeMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </label>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="propiedades2.html">PROPIEDADES</a></li>
+                <li><a class="vender_a" href="vender3.html">VENDER</a></li>
+                <li><a id="nosotros_html" href="nosotros4.html">NOSOTROS</a></li>
+                <li><a href="contacto5.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
     <!-- End NAV BAR -->
 
     <!-- Open MAIN -->
-    <main>
+    <main id="html4">
         <section class="about__sectionContainer">
-            <div class="about__photoContainer">
+            <article class="about__photoContainer">
                 <img src="../img/nosotros.jpg" alt="">
-            </div>
+            </article>
             <article class="about__dataContainer">
                 <h1>Acerca de:</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit quae repudiandae quidem minima assumenda fuga dignissimos voluptatibus unde aperiam, nemo vitae suscipit, illo, ut cum eaque quis similique laudantium qui odit ipsam nostrum. Aspernatur mollitia fuga esse sint suscipit nam aliquam vitae alias consequuntur quae dolores ratione sed, a itaque distinctio soluta! Mollitia harum, porro tempora cupiditate libero placeat cum vitae quam sit, architecto expedita. Sit voluptate neque animi harum? Mollitia, est quia rem aut ipsum nihil laudantium a suscipit deserunt quod porro dicta harum distinctio, soluta repudiandae molestiae quo molestias omnis eum sunt reiciendis? Repellendus fugiat, doloremque pariatur inventore necessitatibus quos, veniam quisquam eius sapiente in id similique delectus nobis impedit, commodi enim expedita officia modi? Veritatis placeat eaque asperiores facere numquam neque dignissimos quasi, quisquam consequuntur voluptas ipsa voluptate, saepe quibusdam minima eius. Odio temporibus exercitationem obcaecati ut aliquid reiciendis molestias, tempore incidunt aut nulla asperiores distinctio debitis ullam cum error repellendus. Repellat quis repudiandae voluptatibus laudantium nihil libero minima expedita provident, sapiente facere? Eius itaque vitae doloremque! Sunt, modi! Cumque repellendus eaque pariatur, molestias unde quae ipsa perspiciatis at porro aliquid harum facere quod voluptatum similique consequuntur maiores recusandae beatae, illum sequi soluta laboriosam cum suscipit eius ea. Quos labore quibusdam illo quia deleniti voluptatem eos tempore consectetur libero voluptas, asperiores repellendus est adipisci optio incidunt quisquam ad expedita quam non similique dignissimos iure dolorum inventore obcaecati! Ipsam, assumenda! Excepturi error similique iste placeat assumenda labore tenetur, velit facilis nostrum esse vel deleniti minus pariatur! Odit excepturi veniam atque consequuntur enim magnam recusandae deserunt nostrum harum quaerat, molestias quidem earum est ipsa maxime eius quod commodi quam! Facilis excepturi pariatur vitae atque aperiam laborum quisquam. Illo sapiente distinctio ex aut qui quia nulla corrupti. Alias eos ex deleniti voluptatum nam iste quod aut non earum aspernatur!</p>
